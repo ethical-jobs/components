@@ -1,0 +1,57 @@
+{
+    "name": "@ethical-jobs/components",
+    "private": false,
+    "author": "Andrew McLagan",
+    "version": "0.1.0",
+    "description": "React components according to Ethical Jobs.",
+    "keywords": [
+        "react",
+        "react-component",
+        "ethical",
+        "jobs"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ethical-jobs/components.git"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ethical-jobs/components/issues"
+    },
+    "scripts": {
+        "build": "NODE_ENV=production BABEL_ENV=es babel ./src --out-dir ./ --ignore spec.js,test.js",
+        "storybook": "start-storybook -p 9001 -c .storybook",
+        "test": "jest"
+    },
+    "files": [
+        "fields/",
+        "components/",
+        "src/"
+    ],
+    "peerDependencies": {
+        "@material-ui/core": "^1.0.0",
+        "react": "^16.0.0",
+        "react-dom": "^16.0.0"
+    },
+    "dependencies": {
+        "classnames": "^2.2.6",
+        "redux-form-material-ui": "^5.0.0-beta.3"
+    },
+    "devDependencies": {
+        "@material-ui/core": "^1.2.1",
+        "@storybook/react": "^3.4.7",
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.3",
+        "babel-jest": "^23.0.1",
+        "babel-plugin-transform-class-properties": "^6.24.1",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "jest": "^23.1.0",
+        "react": "^16.4.0",
+        "react-dom": "^16.4.0"
+    },
+    "engines": {
+        "node": ">=7.0.0"
+    }
+}
